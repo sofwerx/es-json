@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+
+  es-json:
+    build: .
+    image: local/es-json
+    container_name: es-json
+    hostname: es-json
+    environment:
+      ES_URL: ${ES_URL}
+      ES_HTTP_AUTH: ${ES_HTTP_AUTH}
+      ES_INDEX: ${ES_INDEX}
+#    ports:
+#      - 3000:3000
+
