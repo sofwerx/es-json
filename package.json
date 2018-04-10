@@ -1,5 +1,5 @@
 {
-  "name": "es-domoticz-notify",
+  "name": "es-json",
   "version": "1.0.0",
   "description": "This is a Domoticz notification to ElasticSearch gateway",
   "main": "server.js",

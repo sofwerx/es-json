@@ -1,12 +1,12 @@
 FROM node
 
-RUN mkdir -p /es-domoticz-notify
-ADD package.json /es-domoticz-notify/
+RUN mkdir -p /es-json
+ADD package.json /es-json/
 
-WORKDIR /es-domoticz-notify
+WORKDIR /es-json/
 
 RUN npm install
 
-ADD . /es-domoticz-notify/ 
+ADD . /es-json/
 
 CMD ./run.sh
